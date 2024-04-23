@@ -1,0 +1,24 @@
+h1{
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size:xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sample-card {
+    max-width: 600px;
+    background-color:darkorchid;
+    color: white;
+    margin: 5px;
+    margin-left: 20px;
+  }
+
+p{
+  padding-left: 20px;
+}
+
+h2{
+  padding-left: 20px;
+  padding-top: 5px;
+  margin-bottom: 0px;
+}

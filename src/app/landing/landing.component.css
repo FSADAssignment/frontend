@@ -1,26 +1,9 @@
 h1{
-    padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 5px;
     font-size:xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.header-tab {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: indigo;
-    color: white;
-  }
-  
-  .spacer {
-    flex: 1;
-  }
-
-  .login-button{
-    margin-right: 10px;
-  }
 
 .sample-card {
     max-width: 600px;
