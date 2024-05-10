@@ -6,8 +6,8 @@ h1{
 }
 
 .sample-card {
-    max-width: 600px;
-    background-color:darkorchid;
+    max-width: 1200px;
+    background-color:#756bfa;
     color: white;
     margin: 5px;
     margin-left: 20px;
@@ -22,3 +22,15 @@ h2{
   padding-top: 5px;
   margin-bottom: 0px;
 }
+
+.btn-pr {
+  position: absolute;
+  top: 40px; /* Adjust top position as needed */
+  right: 20px; /* Adjust right position as needed */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for a raised look */
+  z-index: 1; /* Ensure it's above the card content */
+  padding: 8px;
+}
+
+
