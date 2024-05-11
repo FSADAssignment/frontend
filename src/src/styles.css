@@ -34,5 +34,3 @@ body, html {
     text-decoration: underline; /* Underline links on hover */
   }
   
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

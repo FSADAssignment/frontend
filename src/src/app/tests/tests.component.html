@@ -1,0 +1,19 @@
+<div class="container">
+  {{ getHeading() }}
+  <mat-action-list>
+    @for (test of testList; track test) {
+
+    <button
+      mat-list-item
+      disabled="{{ test.attempted }}"
+      (click)="startTest(test)"
+    >
+      {{ $index + 1 }}
+      {{ test.language }}
+      {{ test.title }}
+      {{ test.difficultyLevel }}
+      {{ test.description }}
+    </button>
+    }
+  </mat-action-list>
+</div>

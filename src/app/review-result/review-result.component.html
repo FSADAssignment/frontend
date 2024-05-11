@@ -1,0 +1,20 @@
+@for (question of questionSolutions; track question) {
+<div class="question-container">
+  <h2>{{ question?.questionText }}</h2>
+  <mat-radio-group
+    aria-labelledby="example-radio-group-label"
+    class="example-radio-group"
+    disabled="true"
+    [(ngModel)]="question.correctOptionIndex"
+  >
+    @for (option of question?.options; track option) {
+    <mat-radio-button
+      class="example-radio-button"
+      [value]="question?.options?.indexOf(option)"
+      >{{ option }}</mat-radio-button
+    >
+    }
+    <h3> {{ getSelectedOption(question) }}</h3>
+  </mat-radio-group>
+</div>
+}

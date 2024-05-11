@@ -1,0 +1,13 @@
+<div>
+    <app-logged-out *ngIf="componentToShow == 'logged-out'"/>
+
+    <app-login-button *ngIf="componentToShow == 'logged-out'" (loginEvent)="showComponent('login')"/>
+
+    <app-logout-button *ngIf="componentToShow == 'home'" (logoutEvent)="showComponent('logged-out')"/>
+
+    <app-login *ngIf="componentToShow == 'login'"
+        (onSubmitLoginEvent)="onLogin($event)" 
+        (onSubmitRegisterEvent)="onRegister($event)"
+    />
+    <app-home *ngIf="componentToShow == 'home'"/>
+</div>

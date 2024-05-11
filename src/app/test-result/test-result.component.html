@@ -1,0 +1,39 @@
+<div class="result-container">
+  <h2 class="result-title">Result</h2>
+  <p class="loading-spinner">
+    <mat-progress-spinner
+      class="example-margin"
+      color="primary"
+      mode="determinate"
+      strokeWidth="20"
+      diameter="200"
+      [value]="percentageCorrect"
+    >
+    </mat-progress-spinner>
+  </p>
+  <div class="result-info">
+    <p class="result-text">Your Result: {{ percentageCorrect }}%</p>
+    <p class="result-text">Attempted Questions: {{ attemptedCount }}</p>
+    <p class="result-text">Not Attempted Questions: {{ unattemptedCount }}</p>
+  </div>
+  <div class="result-info">
+    <p class="result-text">Correct Answers: {{ testResultResponse.score }}</p>
+  </div>
+</div>
+
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Show Results </mat-panel-title>
+      <mat-panel-description> Review Correct Answers </mat-panel-description>
+    </mat-expansion-panel-header>
+    <app-review-result
+      [questionSolutions]="testResultResponse.questions"
+    ></app-review-result>
+  </mat-expansion-panel>
+</mat-accordion>
+<div class="navigation-buttons">
+  <button mat-raised-button color="primary" (click)="home()" [disabled]="false">
+    Home
+  </button>
+</div>

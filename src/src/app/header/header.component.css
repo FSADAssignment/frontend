@@ -1,0 +1,22 @@
+.header-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: indigo;
+    color: white;
+}
+
+h1{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+.spacer {
+  flex: 1;
+}
+
+.login-button{
+  margin-right: 10px;
+}

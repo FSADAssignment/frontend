@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content horizontally */
+    height: 100vh; /* Make container cover entire viewport height */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  mat-action-list {
+    width: 100%; /* Make list cover entire container width */
+    max-width: 400px; /* Limit list width */
+  }
+  
+  mat-list-item {
+    width: 100%; /* Make list items cover entire list width */
+    text-align: center; /* Center-align list item content */
+    margin-bottom: 10px; /* Add margin between list items */
+  }
+  
