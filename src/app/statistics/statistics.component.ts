@@ -9,5 +9,6 @@ import { DoughnutChartComponent } from '../doughnut-chart/doughnut-chart.compone
   styleUrl: './statistics.component.css'
 })
 export class StatisticsComponent {
+  progress: string = '';
 
 }

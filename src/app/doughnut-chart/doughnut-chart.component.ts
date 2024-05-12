@@ -11,6 +11,9 @@ import Chart from 'chart.js/auto';
 export class DoughnutChartComponent implements AfterViewInit {
   @ViewChild('doughnutChartCanvas') doughnutChartCanvas!: ElementRef<HTMLCanvasElement>;
   @Input() title: string = '';
+  @Input() completedPercentage: number = 0;
+  @Input() leftPercentage: number = 0;
+  @Input() progress: string = '';
   doughnutChart: any;
 
   constructor() {}
@@ -31,7 +34,7 @@ export class DoughnutChartComponent implements AfterViewInit {
       data: {
         labels: ['Completed', 'Left'],
         datasets: [{
-          data: [60, 40], // 60% completed, 40% left
+          data: [this.completedPercentage, this.leftPercentage],
           backgroundColor: ['#23a64c', '#acadac'],
           borderWidth: 1
         }]
