@@ -7,11 +7,11 @@
         mat-list-item
         disabled="{{ test.attempted }}"
         (click)="startTest(test)"
+        [style.background-color]="test.attempted ? 'lightcoral' : 'lightgreen'"
+        style="border: 1px solid black; margin-right: 10px; margin-bottom: 10px;" 
       >
         {{ $index + 1 }}
-        {{ test.language }}
-        {{ test.title }}
-        {{ test.difficultyLevel }}
+       
         {{ test.description }}
       </button>
       }
