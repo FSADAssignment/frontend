@@ -28,4 +28,11 @@ mat-tab-group {
 .sample-card {
   margin-bottom: 20px; /* Add margin between cards */
 }
+.learningmaterial{
+  width: 2000px;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 

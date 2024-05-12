@@ -5,6 +5,7 @@
   
   .question-container {
     margin-bottom: 20px;
+    color: black;
   }
   
   .navigation-buttons {
@@ -18,6 +19,7 @@
     flex-direction: column;
     margin: 15px 0;
     align-items: flex-start;
+  
   }
   
   .example-radio-button {
