@@ -6,16 +6,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { StatisticsComponent } from '../statistics/statistics.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TestsComponent } from '../tests/tests.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatButtonModule, MatCardModule, MatTabsModule, CommonModule, HeaderComponent, StatisticsComponent],
+  imports: [MatButtonModule, MatCardModule, MatTabsModule, CommonModule, 
+    MatButtonToggleModule, HeaderComponent, StatisticsComponent,
+    FormsModule, ReactiveFormsModule, TestsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
   data: string[] = [];
+  selectedLanguage: string = '';
   
   constructor(private axiosService: AxiosService){ }
 
